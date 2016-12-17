@@ -23,7 +23,7 @@ Create link tags for your CSS stylesheet and javascript file in your html docume
 2. Create a container for your entire application using a **div** tag and set the id attribute to `entireContainer`.
 
 3. Within the `entireContainer`,
-  1. Create a container for your palets using a **div** tag and set the id attribute to `paletContainer`.
+  1. Create a container for your palets using a **div** tag and set the id attribute to `paletteContainer`.
   2. Create a container for your canvas using a **div** tag and set the id attribute to `canvasContainer`.
 
 4. Within the `paletteContainer`,

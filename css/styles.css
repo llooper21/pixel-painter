@@ -1,0 +1,30 @@
+h1 {
+	font-family: 'Dekko', cursive;
+}
+.red {
+	background-color: red;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: lime;
+}
+
+.blue {
+	background-color: skyblue;
+}
+
+.indigo {
+ 	background-color: blue;
+}
+
+.purple {
+	background-color: darkviolet;
+}
