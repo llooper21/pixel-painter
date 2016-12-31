@@ -4,31 +4,47 @@
 	<title> Pixel Painter </title>
 	<link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script src="js/app.js"></script>
 </head>
 <body>
 	<center><h1>Pixel Painter</h1></center>
 	<div id="entireContainer">
 		<div id="paletteContainer">
-			<div class="pallette" id="red" onclick="getBackgroundColor(this)">Hi</div>
-			<div class="pallette" id="orange" onclick="getBackgroundColor(this)">Hi</div>
-			<div class="pallette" id="yellow" onclick="getBackgroundColor(this)">Hi</div>
-			<div class="pallette" id="green" onclick="getBackgroundColor(this)">Hi</div>
-			<div class="pallette" id="blue" onclick="getBackgroundColor(this)">Hi</div>
-			<div class="pallette" id="indigo" onclick="getBackgroundColor(this)">Hi</div>
-			<div class="pallette" id="purple" onclick="getBackgroundColor(this)">Hi</div>
+			<div class="pallette" id="red" onclick="getBackgroundColor(this.id)"></div>
+			<div class="pallette" id="orange" onclick="getBackgroundColor(this.id)"></div>
+			<div class="pallette" id="yellow" onclick="getBackgroundColor(this.id)"></div>
+			<div class="pallette" id="green" onclick="getBackgroundColor(this.id)"></div>
+			<div class="pallette" id="blue" onclick="getBackgroundColor(this.id)"></div>
+			<div class="pallette" id="indigo" onclick="getBackgroundColor(this.id)"></div>
+			<div class="pallette" id="purple" onclick="getBackgroundColor(this.id)"></div>
+			<div class="pallette" id="white" onclick="getBackgroundColor(this.id)"></div>
+			<div id="erase" onClick="window.location.reload()">Erase</div>
 		</div>
 		<div id="canvasContainer">
-			<div class="canvas" id="canvas1" onclick="changeColorOnClick(this)">Hello</div>
-			<div class="canvas" id="canvas2" onclick="changeColorOnClick(this)">Hello</div>
-			<div class="canvas" id="canvas3" onclick="changeColorOnClick(this)">Hello</div>
-			<div class="canvas" id="canvas4" onclick="changeColorOnClick(this)">Hello</div>
-			<div class="canvas" id="canvas5" onclick="changeColorOnClick(this)">Hello</div>
+			<center>
+				<div class="rows">
+					<div class="canvas" id="canvas1" onclick="changeColorOnClick(this.id)"></div>
+					<div class="canvas" id="canvas2" onclick="changeColorOnClick(this.id)"></div>
+					<div class="canvas" id="canvas3" onclick="changeColorOnClick(this.id)"></div>
+				</div>
+				<div class="rows">
+					<div class="canvas" id="canvas4" onclick="changeColorOnClick(this.id)"></div>
+					<div class="canvas" id="canvas5" onclick="changeColorOnClick(this.id)"></div>
+					<div class="canvas" id="canvas6" onclick="changeColorOnClick(this.id)"></div>
+				</div>
+				<div class="rows">
+					<div class="canvas" id="canvas7" onclick="changeColorOnClick(this.id)"></div>
+					<div class="canvas" id="canvas8" onclick="changeColorOnClick(this.id)"></div>
+					<div class="canvas" id="canvas9" onclick="changeColorOnClick(this.id)"></div>
+				</div>
+			</center>
+			
 		</div>
 		<div id="selectedColorNameContainer">
+			<p>Selected Color:</p>
 			<div id="selectedColorName"></div>
 		</div>
 	</div>
 
 </body>
+<script src="js/app.js"></script>
 </html>
